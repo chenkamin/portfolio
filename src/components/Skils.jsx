@@ -15,15 +15,18 @@ import Laravel from '../assets/laravel.png'
 import Docker from '../assets/docker.png'
 import Appwrite from '../assets/appwrite.png'
 import ReactLogo from '../assets/react.png'
+import { useTranslation } from 'react-i18next';
 
 const Skils = () => {
+    const { t } = useTranslation();
+
   return (
     <div name="skills" className="w-full h-screeen bg-[#0a192f] text-gray-300">
         {/* container */}
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
             <div>
-                <p className="text-4xl inline border-b-4 border-pink-600  ">Skills</p>
-                <p className="py-4 ">These are the tech ive worked with</p>
+                <p className="text-4xl inline border-b-4 border-pink-600  ">{t("skils-header")}</p>
+                <p className="py-4 ">{t("skils-list")}</p>
             </div>
 
             <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
@@ -68,8 +71,8 @@ const Skils = () => {
                 </div>
 
                 <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                    <img src={MySQL} alt="html" className="w-20 mx-auto" />
-                    <p className="my-4">Mysql</p>
+                    <img src={MySQL} alt="html" className="w-20 mx-auto h-20" />
+                    <p className="my-4">SQL</p>
                 </div>
                 
                 <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
@@ -79,7 +82,7 @@ const Skils = () => {
 
                 <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                     <img src={Appwrite} alt="html" className="w-20 mx-auto" />
-                    <p className="my-4">appwrite</p>
+                    <p className="my-4">Appwrite</p>
                 </div>
 
                 <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">

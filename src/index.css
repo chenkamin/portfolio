@@ -32,3 +32,36 @@ li{
     hsla(242,74%, 61% , 0.8)
   )!important;
 }
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* other styles... */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  /* other styles... */
+}
+
